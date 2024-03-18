@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOME</title>
+</head>
+<body bgcolor="pink">
+<b>
+<p style="font-family:courier;"><a href="Home.html" style="padding: 10px; color: BLACK; background-color:WHITE; text-decoration: none; margin-right: 15px;"> Home</a>
+<a href="list.html" style="padding: 10px; color: BLACK; background-color:WHITE; text-decoration: none; margin-right: 15px;">List</a>
+<a href="Tables.html" style="padding: 10px; color: BLACK; background-color:WHITE; text-decoration: none; margin-right: 15px;">Tables </a>  
+<a href="About us.html" style="padding: 10px; color: BLACK; background-color:WHITE; text-decoration: none; margin-right: 15px;">About us </a>  </a> 
+<a href="contact.html" style="padding: 10px; color: BLACK; background-color:WHITE; text-decoration: none; margin-right: 15px;">Contact</a>
+<a href="Form.html" style="padding: 10px; color: BLACK; background-color:WHITE; text-decoration: none; margin-right: 15px;">Form</a>
+<a href="My book.html" style="padding: 10px; color: BLACK; background-color:WHITE; text-decoration: none; margin-right: 15px;">My book</a></p>
+
+</b>
+
+<h3>DATABASE AND JAVA WITH ONLINE SUPPLY PRODUCT MANAGEMENT SYSTEM</h3>
+	<ol><h4><u><li>DATABASE</li></u></h4>
+		<p>Database name : <b>online supply product management system.</b></p>
+		<ul type="square"><h3><u><i><li>Tables</li></i></u></h3>
+
+			<ol><li><b>category Table</b></li>
+
+			<p>The Category table stores information about product categories. It can be used to organize products into different categories and manage category details such as name and description.. </p></br>
+
+			<li><b>order Table</b></li>
+
+			<p>The Order table tracks customer orders placed through the system. It can be used to manage order details such as order date, total amount, and order status (e.g., pending, shipped, delivered).</p></br>
+
+
+			<li><b>customer Table</b></li>
+
+			<p>The Customer table contains information about customers who use the system to place orders. It can be used to manage customer details such as name, email, phone number, and shipping address..</p></br>
+
+			<li><b>supplier Table</b></li>
+
+			<p>The Supplier table contains information about the suppliers who provide products to the system. It can be used to manage supplier details such as name, contact person, email, and phone number..</p></br>
+
+            <li><b>payment Table</b></li>
+
+			<p>The Payment table tracks payments made for orders. It can be used to manage payment details such as payment date, amount paid, and payment method (e.g., credit card, PayPal)..</p></br>
+
+				<li><b>Products Tables</b></li>
+
+				<p>The Product table stores information about each product available for sale. It can be used to manage product details such as name, description, price, quantity in stock, and the supplier and category to which the product belongs..</p></br>
+
+
+
+
+    Here are the descriptions or purposes of the attributes/columns used in Product table:</br>
+
+
+<ol type="i"><li><p><b><i>prouduct-Id:</i></b> The column which are represents  id of product which is unique value called PRIMARY.  It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Product table.</br></p></li>
+
+<li><p><b><i>Product_Name:</i></b> The column which are represents  the name of the product like Prinnter.</p></br></li>
+
+<li><p><b><i>boxes:</i></b> The column which are represents  the boxes of the product.</br></p></li>
+
+<li><p><b><i>amount:</i></b> The columns which are represents  the price of the product.</br></p></li></ol>
+
+
+                    
+
+                    Here are the descriptions or purposes of the attributes/columns used in Supplier table:</br>
+                    
+                    <ol type="i"><li><p><b><i>Supplier_Id:</i></b> The column which are represents  id of  Customers  which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Supplier  table.</p></br></li>
+
+
+<li><p><b><i>Product_Id:</i></b> The column which are represents  id of product which  is references to the product  table value called FOREIGN KEY.  It is a column of product table  which has relationship between Supplier  table.</p></br></li>
+
+<li><p><b><i>Name:</i></b> The column which are represents  the name of  the Supplier.</p></br></li>
+
+
+<li><p><b>Email:</i></b> The column which are represents  the email of Supplier.</p></br></li>
+
+<li><p><b><i>address:</i></b> The column which are represents address of Supplier.</p></br></li>
+
+<li><p><b><i>Gender:</i></b> The column which are represents sex of Supplier like female and male.</p></br></li></ol> 
+
+
+
+
+
+
+                    
+                    Here are the descriptions or purposes of the attributes/columns used in Customer table:</br>
+
+
+<ol type="i"><li><p><b><i>Customer_Id:</i></b> The column which are represents  id of  Customers  which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Customers  table.</p></br></li>
+
+
+<li><p><b><i>Product_Id:</i></b> The column which are represents  id of product which  is references to the product  table value called FOREIGN KEY.  It is a column of product table  which has relationship between Customers  table.</p></br></li>
+
+<li><p><b><i>Name:</i></b> The column which are represents  the name of  the customer.</p></br></li>
+
+
+<li><p><b>Email:</i></b> The column which are represents  the email of customer.</p></br></li>
+
+<li><p><b><i>address:</i></b> The column which are represents address of customer.</p></br></li>
+
+<li><p><b><i>Gender:</i></b> The column which are represents sex of customer like female and male.</p></br></li></ol> 
+
+
+
+                    <li><b>Attributes of Orders Table</b></li></ol></br>
+
+    Here are the descriptions or purposes of the attributes/columns used in Orders table:</br>
+
+
+<ol type="i"><li><p><b><i>Order_Id:</i></b> The column which are represents  id of  Customers  which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of Orders  table.</p></br></li>
+
+<li><p><b><i>Customer_Id:</i></b> The column which are represents  id of product which  is references to the Customers  table value called FOREIGN KEY.  It is a column of Customers table  which has relationship between Orders  table.</p></br></li>
+
+<li><p><b><i>Date:</i></b> The column which are represents  the date of being orders of customer.</p></br></li>
+
+<li><p><b><i>Amount:</i></b> The column which are represents  the  amount of money paid by customer about ordering.</p></br></li>
+
+<li><p><b><i>confirm_Status:</i></b> The column which are represents  the status of orders, they can be pending,processing, shipped, etc.</p></br></li>
+ 
+
+
+
+        </ul>
+		<h2><u><li>JAVA PROGRAMMING</li></u></h2>
+		
+		<ul type="square"><h3><u><i><li>Description</li></i></u></h3>
+
+			  <b>Introduction</b><br>
+ <p>In this chapter I will be describing how powerful generalpurpose programming language was used to create the analyzed system. Under this chapter I will undergo full detail of how everything will function together with database that have been describe above and how it cope with full analyzed system.</p><br>
+ 
+	<b>Tools used to develop this system in java programming</b><br>
+
+<ol type="a"><li><p><b>Eclipse IDE:</b> an integrated development environment used in computer programming. It contains a base workspace and an extensible plug-in system for customizing the environment. It is the second-most-popular IDE for Java development, and was the most popular. </p><br></li>
+
+<li><p><b>JAR stands for Java Archive:</b>  It's a file format based on the popular ZIP file format and is used for aggregating many files into one. Although JAR can be used as a general archiving tool, the primary motivation for its development was so that Java applets and their requisite components. </p><br></li></ol>
+
+
+
+
+
+
+<p><b>MySQL Connectors:</b> MySQL provides standards-based drivers for JDBC, ODBC, and .Net enabling developers to build database applications in their language.</p><br>
+
+
+
+			              
+</ul>
+		
+	</ol>
+	<h4><p> Tables</p></h4>
+	<h5> LOGIN FORM</h5>
+	<img src="images/login.PNG" width="150"; height="200">
+
+	<h5> CATEGORY FORM</h5>
+	<img src="images/category.PNG" width="700"; height="200">
+
+	<h5> ORDER FORM</h5>
+	<img src="images/order.PNG" width="700"; height="200">
+
+	<h5> CUSTOMER FORM</h5>
+	<img src="images/customer.PNG" width="700"; height="200">
+
+	<h5> SUPPLY FORM</h5>
+	<img src="images/supplier.PNG" width="700"; height="200">
+
+	<h5> PROMOTION FORM</h5>
+	<img src="images/promotion.PNG" width="700"; height="200">
+
+	<h5> PRODUCT  FORM</h5>
+	<img src="images/product.PNG" width="700"; height="200">
+
+
+
+	<marquee><u><i><h4 style="color: black;">Prepared By</i></u>:  MUKAMANA clementine</h4></marquee>
+	</body>
+	</html>
